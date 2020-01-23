@@ -151,6 +151,7 @@ h5 {
 
 /* Your code starts here! */
 body {
+  padding-top: 4rem;
   padding-bottom: 2rem;
 }
 .container {
@@ -169,7 +170,13 @@ h2 {
   font-family: "Anton";
 }
 nav {
+  background: #999;
   padding: 2rem 0 1rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 100;
 }
 nav img {
   float: right;
@@ -179,12 +186,14 @@ nav img {
 nav a {
   /* font-size: 1.25rem; */
   padding: 2rem 1.5rem;
-  color: #666;
+  color: white;
   transition: background 500ms;
 }
-nav a:hover {
-  color: black;
-  text-decoration: underline;
+nav a:hover,
+button:hover {
+  /* font-weight: bold; */
+  color: white;
+  background: #666;
 }
 /* nav a:first-of-type {
   margin-left: 0;
@@ -205,10 +214,6 @@ header button {
   border: 1px solid black;
   padding: 0.25rem 2rem;
   background: white;
-}
-header button:hover {
-  background: #666;
-  color: white;
 }
 .first-section {
   margin: 2rem 0;
